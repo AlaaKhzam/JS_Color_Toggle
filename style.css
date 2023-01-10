@@ -1,0 +1,102 @@
+
+body {
+    background-color: lightgray;
+}
+
+
+.main-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    padding: 20px 0 0 20px;
+}
+
+
+.btn-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.btn-toggle:hover {
+    color: gray;
+}
+
+.menu-colors {
+    position: absolute;
+    margin-top: 55px;
+    visibility: hidden;
+
+}
+
+.menu-colors ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+    width: 230px;
+    background-color: lightgray;
+}
+
+.menu-colors ul li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    width: 200px;
+    margin-bottom: 2px;
+    padding: 15px 0 15px 20px;
+    cursor: pointer;
+}
+
+
+.menu-colors ul li a:hover {
+    color: white;
+}
+
+
+
+.btn-home {
+    background-color: lightgray;
+}
+
+.btn-red {
+    background-color: red; 
+}
+
+.btn-orange {
+    background-color: orange;
+}
+
+.btn-purple {
+    background-color: purple;
+}
+
+.btn-green {
+    background-color: green;
+}
+
+
+.menu-colors ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+}
+
+
+.menu-colors.active {
+    visibility: visible;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(10px);
+}
+
+
